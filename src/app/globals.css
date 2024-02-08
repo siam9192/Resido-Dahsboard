@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'Jost', sans-serif;;
+}
+body{
+  background-color: #171622;
+}
+
+
+svg circle{
+  stroke-linecap: round;
+ margin-right: 5px;
+
+  
+}
+ /* svg {
+  overflow: scroll;
+  width:  80%;
+  height: 80%;
+  transform: rotate(-90deg)
+  
+} */
