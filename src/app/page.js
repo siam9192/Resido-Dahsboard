@@ -1,5 +1,7 @@
+import RecentCustomers from "@/components/RecentCustomers";
 import CustomerReviews from "@/components/customerReviews";
 import Navbar from "@/components/navbar";
+import PieChart from "@/components/pieChart";
 import RevenueProgress from "@/components/revenueProgress";
 import Image from "next/image";
 export default function Home() {
@@ -84,8 +86,9 @@ Total agents
       
     </div>
   <div className="flex lg:flex-row flex-col gap-5">
-    <div className="lg:w-[70%]">
+    <div className="lg:w-[70%] space-y-5">
       <RevenueProgress></RevenueProgress>
+      <PieChart></PieChart>
     </div>
   <div className="lg:w-[30%] space-y-5">
   <div className=" h-fit bg-color_main_light rounded-xl space-y-4 p-5">
@@ -105,6 +108,7 @@ Total agents
 
     </div>
    <CustomerReviews></CustomerReviews>
+   <RecentCustomers></RecentCustomers>
   </div>
   </div>
   </div>

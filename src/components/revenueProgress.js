@@ -97,7 +97,7 @@ const RevenueProgress = () => {
       <div className='flex items-center gap-2'>
    {
     tabs.map((tab,index)=>{
-        return <div className={`capitalize text-text_main  md:text-xl pb-1 hover:cursor-pointer ${activeTab===index ? 'border-b-4  border-color_primary' : ''}`} key={index} onClick={()=>handleTab(index)}>{tab}</div>
+        return <div className={`capitalize text-text_main   pb-1 hover:cursor-pointer ${activeTab===index ? 'border-b-4  border-color_primary' : ''}`} key={index} onClick={()=>handleTab(index)}>{tab}</div>
     })
    }
       </div>
@@ -107,7 +107,7 @@ const RevenueProgress = () => {
        <h1 className="md:text-4xl text-2xl text-text_main font-bold">${290890}</h1>
       </div>
 
-      <div className="flex gap-2 pt-10">
+      <div className="flex gap-2 mt-10 min-h-52">
         <div className="flex flex-col justify-between text-text_light text-center">
             <p>1000K</p>
             <p>800K</p>
@@ -122,7 +122,7 @@ const RevenueProgress = () => {
     {
         array.map((item,index)=>{
             return <div>
-                <div className="h-full w-2 bg-color_main rounded-t-full rounded-b-full  rotate-180">
+                <div className="h-[80%] w-2 bg-color_main rounded-t-full rounded-b-full  rotate-180">
                 <div className={`w-full bg-color_primary rounded-b-full rounded-t-full`} style={{height:`${(item.value/400000)*100}%`}}>
                     
                 </div>
